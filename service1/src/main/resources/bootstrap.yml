@@ -1,0 +1,13 @@
+server:
+    port: 56010
+
+spring:
+    application:
+      name: service1
+    cloud:
+      nacos:
+        config:
+          server-addr: 49.235.114.120:8848
+          file-extension: yaml #dataId = application.name + file-extension
+          namespace: dev
+          group: TEST_GROUP
